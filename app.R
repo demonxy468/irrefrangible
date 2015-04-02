@@ -1,16 +1,18 @@
+library(markdown)
 library(shiny)
 library(shinythemes)
-library(markdown)
+server <- shinyServer(function(input, output){})
+
 img_link <- function(file){
   return(file.path(getwd(),"assets","images", file))
 }
-shinyUI(navbarPage(theme = shinytheme("journal"),
+
+ui <- navbarPage(theme = shinytheme("journal"),
                    "Oliver Keyes",
                    tabPanel("About"),
                    tabPanel("Code"),
                    tabPanel("Research"),
                    tabPanel("C.V."),
-                   tabPanel("Blog")
-                   )
-        )
-)
+                   tabPanel("Blog"))
+
+shinyApp(ui, server)

@@ -23,7 +23,7 @@ ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",
                             fluidRow(
                               column(2),
                               column(6, 
-                                     includeMarkdown(content_link("About.md"))
+                                     includeMarkdown(content_link("Code.md"))
                                      )
                               )
                             ),
@@ -34,7 +34,7 @@ ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",
                                      includeMarkdown(content_link("About.md")))
                               )
                             ),
-                   tabPanel("C.V."
+                   tabPanel("C.V.",
                             fluidRow(
                               column(2),
                               column(6,
@@ -51,5 +51,4 @@ ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",
                               )
                             )
                  )
-)
 shinyApp(ui, server)

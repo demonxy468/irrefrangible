@@ -1,18 +1,23 @@
 library(markdown)
 library(shiny)
 library(shinythemes)
-server <- shinyServer(function(input, output){})
 
-img_link <- function(file){
-  return(file.path(getwd(),"assets","images", file))
+content_link <- function(file){
+  return(file.path(getwd(),"assets","content", file))
 }
 
-ui <- navbarPage(theme = shinytheme("journal"),
-                   "Oliver Keyes",
-                   tabPanel("About"),
+
+server <- function(input, output){
+}
+
+ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",                 
+                   tabPanel("About",
+                            fluidRow(
+                              column(2),
+                              column(6, includeMarkdown(content_link("About.md"))))),
                    tabPanel("Code"),
                    tabPanel("Research"),
                    tabPanel("C.V."),
-                   tabPanel("Blog"))
-
+                   tabPanel("Blog")
+)
 shinyApp(ui, server)

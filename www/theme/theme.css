@@ -308,7 +308,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #eb6864;
+  color: #000000;
   text-decoration: none;
 }
 a:hover,
@@ -3835,7 +3835,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 8px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #eb6864;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   margin-left: -1px;
@@ -3983,7 +3983,7 @@ a.label:focus {
   background-color: #808080;
 }
 .label-primary {
-  background-color: #eb6864;
+  background-color: #000000;
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
@@ -4051,7 +4051,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #eb6864;
+  color: #000000;
   background-color: #ffffff;
 }
 .list-group-item > .badge {

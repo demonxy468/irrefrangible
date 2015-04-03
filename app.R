@@ -1,6 +1,5 @@
 library(markdown)
 library(shiny)
-library(shinythemes)
 
 content_link <- function(file){
   return(file.path(getwd(),"assets","content", file))
@@ -8,6 +7,10 @@ content_link <- function(file){
 
 
 server <- function(input, output){
+  output$research_work <- renderDataTable(file.path(getwd(),"assets","other", "papers.tsv"),
+                                          options = list(autoWidth = FALSE,
+                                                         paging = FALSE,
+                                                         searching = FALSE))
 }
 
 ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",                 
@@ -31,7 +34,10 @@ ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",
                             fluidRow(
                               column(2),
                               column(6,
-                                     includeMarkdown(content_link("About.md")))
+                                     includeMarkdown(content_link("Research.md")),
+                                     h3("Papers and presentations"),
+                                     dataTableOutput("research_work")
+                                     )
                               )
                             ),
                    tabPanel("C.V.",

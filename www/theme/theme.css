@@ -27,32 +27,12 @@ html {
 body {
   margin: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav,
+section, summary {
   display: block;
 }
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
+
 [hidden],
 template {
   display: none;
@@ -4692,8 +4672,7 @@ a.list-group-item-danger.active:focus {
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
+.embed-responsive object {
   position: absolute;
   top: 0;
   left: 0;
@@ -5637,47 +5616,10 @@ button.close {
   font-weight: 700;
   text-transform: uppercase;
 }
-.has-warning .help-block,
-.has-warning .control-label,
-.has-warning .form-control-feedback {
-  color: #f57a00;
-}
-.has-warning .form-control,
-.has-warning .form-control:focus {
-  border-color: #f57a00;
-}
-.has-error .help-block,
-.has-error .control-label,
-.has-error .form-control-feedback {
-  color: #eb6864;
-}
-.has-error .form-control,
-.has-error .form-control:focus {
-  border-color: #eb6864;
-}
-.has-success .help-block,
-.has-success .control-label,
-.has-success .form-control-feedback {
-  color: #22b24c;
-}
-.has-success .form-control,
-.has-success .form-control:focus {
-  border-color: #22b24c;
-}
 .badge {
   padding-bottom: 4px;
   vertical-align: 3px;
   font-size: 10px;
-}
-.jumbotron h1,
-.jumbotron h2,
-.jumbotron h3,
-.jumbotron h4,
-.jumbotron h5,
-.jumbotron h6 {
-  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-  font-weight: 700;
-  color: #000;
 }
 .panel-primary .panel-title,
 .panel-success .panel-title,

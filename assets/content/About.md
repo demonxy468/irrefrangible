@@ -6,6 +6,6 @@ how people consume content, how user behaviour varies between desktop and mobile
 
 A long-time Wikipedia editor, I'm employed by the Wikimedia Foundation as a researcher, geolocating the heck out of everything. Prior to that I worked at the Foundation as the first community manager in our product development team, and prior to *that* I worked as (by decreasing length of survival) a political campaigner, a free culture advocate, a librarian and a butcher.
 
-Outside of research I'm a dedicated C++ and R programmer, and enjoy nothing more than writing whip-fast packages for a variety of tasks (see 'Code') and contrasting that with writing things you should definitely not write in R, in R. [Like this website](https://github.com/Ironholds/irrefrangible).
+Outside of research I'm a dedicated C++ and R programmer, and enjoy nothing more than writing whip-fast packages for a variety of tasks (see 'Code') and contrasting that with writing things you should definitely not write in R, in R. [Like this website](https://github.com/Ironholds/irrefrangible). Outside of outside of research, I [blog](./blog/) about both.
 
 I'm powered by [books](https://www.goodreads.com/user/show/8532388-oliver), archery and [that Midwest hippity-hoppity nonsense the kids love so much](https://en.wikipedia.org/wiki/Twin_Cities_hip_hop).

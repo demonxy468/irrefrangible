@@ -5,6 +5,9 @@ content_link <- function(file){
   return(file.path(getwd(),"assets","content", file))
 }
 
+extLinkPanel <- function(title, link, value){
+  divTag <- a(class = "tab-pane", href=link, value)
+}
 server <- function(input, output){
   output$research_work <- renderDataTable(read.delim(file.path(getwd(),"assets","other", "papers.tsv"),
                                                      as.is = TRUE, header = TRUE),
@@ -36,8 +39,7 @@ ui <- navbarPage(title = "Oliver Keyes", theme = "theme/theme.css",
                               column(6,
                                      includeMarkdown(content_link("Research.md")),
                                      h3("Papers and presentations"),
-                                     dataTableOutput("research_work")
-                                     )
+                                     dataTableOutput("research_work"))
                               )
                             )
                  )
